@@ -4,6 +4,8 @@
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+# For some reason its still showing up in commits?
+.pnp.js
 
 node_modules
 yarn-error.log
