@@ -1,19 +1,20 @@
 //#region Imports
 
 // Node
-import path    from 'path';
+import path from 'path';
 
 // npm
 import webpack from 'webpack';
 
 //#endregion Imports
 
-const base   = path.resolve(__dirname, '../src')
-const outDir = path.resolve(__dirname, '../dist')
+const base    = path.resolve(__dirname, '../src'),
+      context = base,
+      outDir  = path.resolve(__dirname, '../dist');
 
 const config: webpack.Configuration = 
 {
-    context: base,
+    context,
     entry:  './index.ts',
 
     output: 
